@@ -1,4 +1,5 @@
-# PUCC
+# PUC-CAMPINAS
+
 👋 Bem-vindo ao meu repositório!
 
 Este repositório foi criado com o objetivo de acompanhar minha evolução como desenvolvedor e documentar os projetos que venho desenvolvendo ao longo da minha trajetória na faculdade 🎓.
