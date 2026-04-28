@@ -13,7 +13,7 @@ def inversao(L):
         posFinal -= 1
     return L
 
-print(inversao[2, 4, 6])
+print(inversao([2, 4, 6]))
 
 ''' escreva um programa em python com uma função que receba uma lista
 e quando executdo os comando abaixo ele exiba o que se pede (disciplina com a maior nota
