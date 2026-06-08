@@ -12,7 +12,9 @@
 
 
 # =========================================================
-# 1 - Matéria com MAIOR nota
+'''1 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta o nome da matéria com maior nota. No caso da lista vir vazia, retorne None.  
+Assuma que não há mais de uma matéria com a mesma nota, sendo esta a maior de todas. '''
 # =========================================================
 def ex1_maior_nota(lista):
     if len(lista) == 0:  # verifica se lista está vazia
@@ -28,7 +30,10 @@ def ex1_maior_nota(lista):
 
 
 # =========================================================
-# 2 - Matéria com MENOR frequência
+'''2 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta o nome da matéria com menor frequência. No caso da lista vir vazia, retorne None.  
+Assuma que não há mais de uma matéria com a mesma frequência, sendo esta a menor de 
+todas.'''
 # =========================================================
 def ex2_menor_freq(lista):
     if len(lista) == 0:
@@ -44,7 +49,9 @@ def ex2_menor_freq(lista):
 
 
 # =========================================================
-# 3 - Soma das notas
+'''3 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta a soma das notas de todas as disciplinas da lista. Retorne zero caso a lista venha 
+vazia. '''
 # =========================================================
 def ex3_soma_notas(lista):
     soma = 0
@@ -56,7 +63,9 @@ def ex3_soma_notas(lista):
 
 
 # =========================================================
-# 4 - Média aritmética
+'''4 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta a média aritmética das notas de todas as disciplinas da lista. Retorne None caso a 
+lista venha vazia. '''
 # =========================================================
 def ex4_media(lista):
     if len(lista) == 0:
@@ -71,7 +80,9 @@ def ex4_media(lista):
 
 
 # =========================================================
-# 5 - Média geométrica
+'''5 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta a média geométrica das notas de todas as disciplinas da lista. Retorne None caso a 
+lista venha vazia. '''
 # =========================================================
 def ex5_media_geom(lista):
     if len(lista) == 0:
@@ -86,7 +97,11 @@ def ex5_media_geom(lista):
 
 
 # =========================================================
-# 6 - Média ponderada
+''' 6 - Dada uma lista de registros (listona de dicionarinhos), bem como uma lista de números 
+reais positivos, escreva uma função em Python que resulta a média aritmética ponderada 
+das notas de todas as disciplinas da primeira lista, ponderadas com os pesos da segunda 
+lista. Retorne None caso alguma das listas vier vazia. Retorne None também quando as 
+listas tiverem tamanhos diferentes. '''
 # =========================================================
 def ex6_media_pond(lista, pesos):
     if len(lista) == 0 or len(pesos) == 0:
@@ -106,7 +121,11 @@ def ex6_media_pond(lista, pesos):
 
 
 # =========================================================
-# 7 - Média geométrica ponderada
+'''7 - Dada uma lista de registros (listona de dicionarinhos), bem como uma lista de números 
+reais positivos, escreva uma função em Python que resulta a média geométrica ponderada 
+das notas de todas as disciplinas da primeira lista, ponderadas com os pesos da segunda 
+lista. Retorne None caso alguma das listas vier vazia. Retorne None também quando as 
+listas tiverem tamanhos diferentes. '''
 # =========================================================
 def ex7_media_geom_pond(lista, pesos):
     if len(lista) == 0 or len(pesos) == 0:
@@ -126,7 +145,9 @@ def ex7_media_geom_pond(lista, pesos):
 
 
 # =========================================================
-# 8 - Verificar ordem crescente por nota
+'''8 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta a True, caso os registros da lista estejam ordenados em ordem crescente de nota, ou 
+então que resulta False, caso contrário. '''
 # =========================================================
 def ex8_ordem_crescente(lista):
     for i in range(len(lista) - 1):
@@ -137,7 +158,9 @@ def ex8_ordem_crescente(lista):
 
 
 # =========================================================
-# 9 - Verificar ordem decrescente por frequência
+'''9 - Dada uma lista de registros (listona de dicionarinhos), escreva uma função em Python que 
+resulta a True, caso os registros da lista estejam ordenados em ordem decrescente de 
+frequência, ou então que resulta False, caso contrário. '''
 # =========================================================
 def ex9_ordem_decrescente(lista):
     for i in range(len(lista) - 1):
@@ -148,7 +171,10 @@ def ex9_ordem_decrescente(lista):
 
 
 # =========================================================
-# 10 - Inserir ordenado por nota
+'''10 -  Dados um registro (uma dicionarinho) e uma lista de registros (listona de dicionarinhos) 
+com os registros ordenados em ordem crescente de nota, escreva um procedimento que 
+inclui o registro fornecido no local apropriado da lista fornecida para que ela continue 
+ordenada em ordem crescente de nota após a insersão. '''
 # =========================================================
 def ex10_inserir(lista, novo):
     i = 0
@@ -168,7 +194,10 @@ def ex10_inserir(lista, novo):
 
 
 # =========================================================
-# 11 - Inserir ordenado por frequência (decrescente)
+'''11 -  Dados um registro (uma dicionarinho) e uma lista de registros (listona de dicionarinhos) 
+com os registros ordenados em ordem decrescente de frequência, escreva um 
+procedimento que inclui o registro fornecido no local apropriado da lista fornecida para 
+que ela continue ordenada em ordem decrescente de frequência após a insersão. '''
 # =========================================================
 def ex11_inserir(lista, novo):
     i = 0
@@ -188,7 +217,9 @@ def ex11_inserir(lista, novo):
 
 
 # =========================================================
-# 12 - Bubble Sort (nota crescente)
+'''12 -  Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que ordena os registros em ordem crescente de nota. Para tanto, use o método da 
+Bolha (Bubble Sort). '''
 # =========================================================
 def ex12_bubble(lista):
     for i in range(len(lista)):
@@ -200,7 +231,9 @@ def ex12_bubble(lista):
 
 
 # =========================================================
-# 13 - Bubble Sort (frequência decrescente)
+'''13 -  Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que ordena os registros em ordem decrescente de frequência. Para tanto, use o 
+método da Bolha (Bubble Sort). '''
 # =========================================================
 def ex13_bubble(lista):
     for i in range(len(lista)):
@@ -212,7 +245,9 @@ def ex13_bubble(lista):
 
 
 # =========================================================
-# 14 - Insertion Sort (nota crescente)
+'''14 -  Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que ordena os registros em ordem crescente de nota. Para tanto, use o método da 
+Inserção Direta (Insertion Sort). '''
 # =========================================================
 def ex14_insertion(lista):
     for i in range(1, len(lista)):
@@ -227,7 +262,9 @@ def ex14_insertion(lista):
 
 
 # =========================================================
-# 15 - Insertion Sort (frequência decrescente)
+'''15 - Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que ordena os registros em ordem decrescente de frequência. Para tanto, use o 
+método da Inserção Direta (Insertion Sort). '''
 # =========================================================
 def ex15_insertion(lista):
     for i in range(1, len(lista)):
@@ -242,7 +279,9 @@ def ex15_insertion(lista):
 
 
 # =========================================================
-# 16 - Selection Sort (nota crescente)
+'''16 -  Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que ordena os registros em ordem crescente de nota. Para tanto, use o método da 
+Seleção Direta (Selection Sort). '''
 # =========================================================
 def ex16_selection(lista):
     for i in range(len(lista)):
@@ -258,7 +297,9 @@ def ex16_selection(lista):
 
 
 # =========================================================
-# 17 - Selection Sort (frequência decrescente)
+'''17 -  Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que ordena os registros em ordem decrescente de frequência. Para tanto, use o 
+método da Seleção Direta (Selection Sort). '''
 # =========================================================
 def ex17_selection(lista):
     for i in range(len(lista)):
@@ -274,7 +315,9 @@ def ex17_selection(lista):
 
 
 # =========================================================
-# 18 - Remover disciplina pelo nome
+''' 18 -Dada uma lista de registros (listona de dicionarinhos), escreva um procedimento em 
+Python que retira da lista fornecida o registro que contiver o nome da disciplina igual a um 
+nome dado. Não faça nada, caso não exista um registro com o nome dado. '''
 # =========================================================
 def ex18_remover(lista, nome):
     i = 0
@@ -291,7 +334,10 @@ def ex18_remover(lista, nome):
 
 
 # =========================================================
-# 19 - Remover menor nota
+''' 19 - Dada uma lista de registros (listona de dicionarinhos) escreva um procedimento em 
+Python que remove da lista fornecida o registro que contiver a menor nota de todas. Não 
+faça nada, caso a lista venha vazia.  Assuma que não há mais de uma matéria com a 
+mesma nota, sendo esta a menor de todas. '''
 # =========================================================
 def ex19_remover(lista):
     if len(lista) == 0:
@@ -310,7 +356,10 @@ def ex19_remover(lista):
 
 
 # =========================================================
-# 20 - Remover maior frequência
+'''20 -  Dada uma lista de registros (listona de dicionarinhos) escreva um procedimento em 
+Python que remove da lista fornecida o registro que contiver a maior frequência de todas. 
+Não faça nada, caso a lista venha vazia.  Assuma que não há mais de uma matéria com a 
+mesma frequência, sendo esta a maior de todas.'''
 # =========================================================
 def ex20_remover(lista):
     if len(lista) == 0:
@@ -333,7 +382,12 @@ def ex20_remover(lista):
 # =========================================================
 
 
-# 21 - Aluno com maior nota
+''' 21 - Dadas 3 listas de registros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta o nome do aluno que teve a maior nota. Retorne None em 
+caso de impossibilidade de produzir o resultado.  Assuma que não há mais de uma matéria 
+com a mesma nota, sendo esta a maior de todas. Pode-se deixar de colocar como 
+parâmetro a(s) lista(s) que lhe parecer(em) sem utilidade no exercício. '''
+
 def ex21(alunos, resultados):
     maior = resultados[0]
 
@@ -346,7 +400,12 @@ def ex21(alunos, resultados):
             return a[1]
 
 
-# 22 - Disciplina com menor frequência
+''' 22 -  Dadas 3 listas de registros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta o nome da disciplina que teve a menor frequência. Retorne 
+None em caso de impossibilidade de produzir o resultado.  Assuma que não há mais de 
+uma matéria com a mesma frequência, sendo esta a menor de todas. Pode-se deixar de 
+colocar como parâmetro a(s) lista(s) que lhe parecer(em) sem utilidade no exercício. '''
+
 def ex22(disciplinas, resultados):
     menor = resultados[0]
 
@@ -359,7 +418,11 @@ def ex22(disciplinas, resultados):
             return d[1]
 
 
-# 23 - Alunos com média igual
+'''23 - Dadas 3 listas de registros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta uma lista com o nome de todos os alunos, cuja média 
+aritmética das notas seja igual a um valor também dado. Retorne [ ] em caso de 
+impossibilidade de produzir o resultado. Pode-se deixar de colocar como parâmetro a(s) 
+lista(s) que lhe parecer(em) sem utilidade no exercício. '''
 def ex23(alunos, resultados, valor):
     resposta = []
 
@@ -378,7 +441,11 @@ def ex23(alunos, resultados, valor):
     return resposta
 
 
-# 24 - Dígitos pares dos RAs
+''' 24 -  Dadas 3 listas de regi'stros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta quantos dígitos pares tem nos RAs dos alunos cuja média 
+geométrica das notas seja igual a um valor também dado. Retorne None em caso de 
+impossibilidade de produzir o resultado. Pode-se deixar de colocar como parâmetro a(s) 
+lista(s) que lhe parecer(em) sem utilidade no exercício.'''
 def ex24(alunos, resultados, valor):
     total = 0
 
@@ -405,7 +472,11 @@ def ex24(alunos, resultados, valor):
     return total
 
 
-# 25 - Alunos reprovados em alguma disciplina
+''' 25 -  Dadas 3 listas de registros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta uma lista com o nome dos alunos que reprovaram em 
+alguma disciplina. Retorne [ ] em caso de impossibilidade de produzir o resultado. Pode
+se deixar de colocar como parâmetro a(s) lista(s) que lhe parecer(em) sem utilidade no 
+exercício.'''
 def ex25(alunos, resultados):
     resp = []
 
@@ -423,7 +494,10 @@ def ex25(alunos, resultados):
     return resp
 
 
-# 26 - Disciplinas sem reprovação
+'''26 - Dadas 3 listas de registros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta uma lista com o nome das disciplinas que nunca reprovaram 
+um aluno. Retorne [ ] em caso de impossibilidade de produzir o resultado. Pode-se deixar 
+de colocar como parâmetro a(s) lista(s) que lhe parecer(em) sem utilidade no exercício. '''
 def ex26(disciplinas, resultados):
     resp = []
 
@@ -441,7 +515,9 @@ def ex26(disciplinas, resultados):
     return resp
 
 
-# 27 - Emails de quem reprovou em todas
+'''27 - Dadas 3 listas de registros (listonas de dicionarinhos), uma de cada tipo, escreva uma 
+função em Python que resulta uma lista com o e-mail dos alunos que reprovaram em todas 
+as disciplinas que cursou. Retorne [ ] em caso de impossibilidade de produzir o resultado.'''
 def ex27(alunos, resultados):
     resp = []
 
