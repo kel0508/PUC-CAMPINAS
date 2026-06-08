@@ -107,7 +107,8 @@ def ex5_inverter(texto):
 
 
 # =========================================
-# 6 - Inverter recursivo
+''' 6 - Rescreva recursivamente em Python a função acima. Faça um programa em Python para
+testar sua função. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex6_inverter_rec(texto):
     if texto == "":  # caso base
@@ -116,7 +117,9 @@ def ex6_inverter_rec(texto):
 
 
 # =========================================
-# 7 - Verificar palíndromo
+'''7 - Escreva uma função em Python para verificar se uma cadeia de caracteres fornecida é
+palíndrome, resultando 1 em Pythonaso afirmativo, ou zero, caso contrário. Faça um
+programa em Python para testar sua função.'''
 # =========================================
 def ex7_palindromo(texto):
     i = 0
@@ -132,7 +135,10 @@ def ex7_palindromo(texto):
 
 
 # =========================================
-# 8 - TAB → 8 espaços
+''' 8 - Escreva uma função em Python que resulta uma cadeia de caracteres em tudo idêntica à
+fornecida, exceto pelo fato de que nela todos os caracteres <TAB> serão substituídos por 8
+espaços em branco. Faça um programa em Python para testar sua função.'''
+
 # =========================================
 def ex8_tab_para_espaco(texto):
     resultado = ""
@@ -147,7 +153,9 @@ def ex8_tab_para_espaco(texto):
 
 
 # =========================================
-# 9 - 8 espaços → TAB
+''' 9 - Escreva uma função em Python que resulta uma cadeia de caracteres em tudo idêntica à
+fornecida, exceto pelo fato de que nela toda subcadeia de 8 espaços em branco serão
+substituidos por um caractere <TAB>.'''
 # =========================================
 def ex9_espaco_para_tab(texto):
     resultado = ""
@@ -165,7 +173,9 @@ def ex9_espaco_para_tab(texto):
 
 
 # =========================================
-# 10 - Posição esquerda de um caractere
+'''10 - Escreva uma função em Python que resulte a posição mais a esquerda de um dado
+caractere em uma cadeia de caracteres fornecida. Faça um programa em Python para testar sua
+função'''
 # =========================================
 def ex10_pos_esq(texto, alvo):
     for i in range(len(texto)):
@@ -175,7 +185,8 @@ def ex10_pos_esq(texto, alvo):
 
 
 # =========================================
-# 11 - Posição direita de um caractere
+''' 11 - Escreva uma função em Python que resulte a posição mais a direita de um dado caractere
+em uma cadeia de caracteres fornecida. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex11_pos_dir(texto, alvo):
     pos = -1
@@ -188,7 +199,8 @@ def ex11_pos_dir(texto, alvo):
 
 
 # =========================================
-# 12 - Contar caractere
+''' 12 - Escreva uma função em Python que resulte quantas vezes um dado caractere ocorre em
+uma cadeia de caracteres fornecida. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex12_contar(texto, alvo):
     contador = 0
@@ -201,7 +213,9 @@ def ex12_contar(texto, alvo):
 
 
 # =========================================
-# 13 - Primeira posição de um conjunto
+''' 13 -  Escreva uma função em Python resulte a posição mais a esquerda de uma dada cadeia de
+caracteres que contem um dos caracteres de uma cadeia de caracteres também fornecida.
+Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex13_pos_conjunto(texto, conjunto):
     for i in range(len(texto)):
@@ -212,7 +226,9 @@ def ex13_pos_conjunto(texto, conjunto):
 
 
 # =========================================
-# 14 - Última posição de um conjunto
+'''14 - Escreva uma função em Python resulte a posição mais a direita de uma dada cadeia de
+caracteres que contem um dos caracteres de uma cadeia de caracteres também fornecida.
+Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex14_pos_dir_conjunto(texto, conjunto):
     pos = -1
@@ -226,7 +242,9 @@ def ex14_pos_dir_conjunto(texto, conjunto):
 
 
 # =========================================
-# 15 - Contar caracteres do conjunto
+'''15 - Escreva uma função em Python resulte quantas vezes uma dada cadeia de caracteres
+contem um dos caracteres de uma cadeia de caracteres também fornecida. Faça um
+programa em Python para testar sua função.'''
 # =========================================
 def ex15_contar_conjunto(texto, conjunto):
     contador = 0
@@ -241,7 +259,9 @@ def ex15_contar_conjunto(texto, conjunto):
 
 
 # =========================================
-# 16 - Primeira substring
+'''16 - Escreva uma função em Python que resulte a posição mais a esquerda de uma dada
+subcadeia em uma cadeia de caracteres fornecida. Faça um programa em Python para testar
+sua função'''
 # =========================================
 def ex16_sub_esq(texto, sub):
     for i in range(len(texto) - len(sub) + 1):
@@ -259,7 +279,8 @@ def ex16_sub_esq(texto, sub):
 
 
 # =========================================
-# 17 - Última substring
+''' 17 - Escreva uma função em Python que resulte a posição mais a direita de uma dada subcadeia
+em uma cadeia de caracteres fornecida. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex17_sub_dir(texto, sub):
     pos = -1
@@ -279,7 +300,8 @@ def ex17_sub_dir(texto, sub):
 
 
 # =========================================
-# 18 - Contar substring
+'''18 - Escreva uma função em Python que resulta quantas vezes uma cadeia de caracterer
+fornecida contem uma dada subcadeia. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex18_contar_sub(texto, sub):
     contador = 0
@@ -299,7 +321,10 @@ def ex18_contar_sub(texto, sub):
 
 
 # =========================================
-# 19 - Remover caractere
+'''19 - Escreva uma função em Python que resulte uma cadeia de caracteres em tudo idêntica a
+uma cadeia de caracteres fornecida, exceto pelo fato de que nela todas as ocorrências de
+um caractere dado teriam sido removidas. Faça um programa em Python para testar sua
+função.'''
 # =========================================
 def ex19_remover(texto, alvo):
     resultado = ""
@@ -312,7 +337,10 @@ def ex19_remover(texto, alvo):
 
 
 # =========================================
-# 20 - Remover conjunto
+''' 20 - Escreva uma função em Python que resulte uma cadeia de caracteres em tudo idêntica a
+uma cadeia de caracteres fornecida, exceto pelo fato de que dela teriam sido removidas
+todas as ocorrências dos caracteres que compõem uma cadeia de caracteres que também
+seria fornecida. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex20_remover_conjunto(texto, conjunto):
     resultado = ""
@@ -332,7 +360,10 @@ def ex20_remover_conjunto(texto, conjunto):
 
 
 # =========================================
-# 21 - Remover substring
+'''21 - Escreva uma função em Python que resulte uma cadeia de caracteres em tudo idêntica a
+uma cadeia de caracteres fornecida, exceto pelo fato de que nela todas as ocorrências de
+uma subcadeia também fornecida teriam sido removidas. Faça um programa em Python para
+testar sua função.'''
 # =========================================
 def ex21_remover_sub(texto, sub):
     resultado = ""
@@ -359,7 +390,10 @@ def ex21_remover_sub(texto, sub):
 
 
 # =========================================
-# 22 - Binário → decimal
+'''22 - Escreva uma função em Python que resulta o número natural representado, em binário,
+pela cadeia de caracteres fornecida (e que deve permanecer intacta e que deve conter
+somente caracteres que correspondem aos dígitos binários validos). Faça um programa em
+Python para testar sua função'''
 # =========================================
 def ex22_bin_para_dec(binario):
     resultado = 0
@@ -374,7 +408,9 @@ def ex22_bin_para_dec(binario):
 
 
 # =========================================
-# 23 - Decimal → binário
+''' 23 - Escreva uma função em Python que resulta uma cadeia de caracteres que contém somente
+caracteres que correspondem aos dígitos binários válidos e que representa, em binário, o
+número natural fornecido. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex23_dec_para_bin(numero):
     if numero == 0:
@@ -390,7 +426,10 @@ def ex23_dec_para_bin(numero):
 
 
 # =========================================
-# 24 - Octal → decimal
+'''24 - Escreva uma função em Python que resulta o número natural representado, em octal, pela
+cadeia de caracteres fornecida (e que deve permanecer intacta e que deve conter somente
+caracteres que correspondem aos dígitos octais validos). Faça um programa em Python para
+testar sua função.'''
 # =========================================
 def ex24_oct_para_dec(octal):
     resultado = 0
@@ -404,7 +443,9 @@ def ex24_oct_para_dec(octal):
 
 
 # =========================================
-# 25 - Decimal → octal
+'''25 - Escreva uma função em Python que resulta uma cadeia de caracteres que contém somente
+caracteres que correspondem aos dígitos octais válidos e que representa, em octal, o
+número natural fornecido. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex25_dec_para_oct(numero):
     if numero == 0:
@@ -420,7 +461,10 @@ def ex25_dec_para_oct(numero):
 
 
 # =========================================
-# 26 - String → decimal
+'''26 - Escreva uma função em Python que resulta o número natural representado, em decimal,
+pela cadeia de caracteres fornecida (e que deve permanecer intacta e que deve conter
+somente caracteres que correspondem aos dígitos decimais validos). Faça um programa em
+Python para testar sua função.'''
 # =========================================
 def ex26_string_para_dec(texto):
     resultado = 0
@@ -432,7 +476,9 @@ def ex26_string_para_dec(texto):
 
 
 # =========================================
-# 27 - Decimal → string
+'''27 - Escreva uma função em Python que resulta uma cadeia de caracteres que contém somente
+caracteres que correspondem aos dígitos decimais válidos e que representa, em decimal, o
+número natural fornecido. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex27_dec_para_string(numero):
     if numero == 0:
@@ -448,7 +494,10 @@ def ex27_dec_para_string(numero):
 
 
 # =========================================
-# 28 - Hex → decimal
+'''28 - Escreva uma função em Python que resulta o número natural representado, em
+hexadecimal, pela cadeia de caracteres fornecida (e que deve permanecer intacta e que
+deve conter somente caracteres que correspondem aos dígitos hexadecimais validos). Faça
+um programa em Python para testar sua função.'''
 # =========================================
 def ex28_hex_para_dec(hexadecimal):
     resultado = 0
@@ -469,7 +518,10 @@ def ex28_hex_para_dec(hexadecimal):
 
 
 # =========================================
-# 29 - Decimal → hex
+'''29 - Escreva uma função em Python que resulta uma cadeia de caracteres que contém somente
+caracteres que correspondem aos dígitos hexadecimais válidos e que representa, em
+hexadecimal, o número natural fornecido. Faça um programa em Python para testar sua
+função.'''
 # =========================================
 def ex29_dec_para_hex(numero):
     if numero == 0:
@@ -491,7 +543,10 @@ def ex29_dec_para_hex(numero):
 
 
 # =========================================
-# 30 - Base qualquer → decimal
+'''30 - Escreva uma função em Python que resulta o número natural representado, na base
+numérica dada, pela cadeia de caracteres fornecida (e que deve permanecer intacta e que
+deve conter somente caracteres que correspondem aos dígitos validos na base numérica
+dada). Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex30_base_para_dec(texto, base):
     resultado = 0
@@ -512,7 +567,10 @@ def ex30_base_para_dec(texto, base):
 
 
 # =========================================
-# 31 - Decimal → base qualquer
+'''31 - Escreva uma função em Python que resulta uma cadeia de caracteres que contém somente
+caracteres que correspondem aos dígitos válidos na base numérica dada e que representa,
+na base numérica em questão, o número natural fornecido. Faça um programa em Python
+para testar sua função'''
 # =========================================
 def ex31_dec_para_base(numero, base):
     if numero == 0:
@@ -534,7 +592,8 @@ def ex31_dec_para_base(numero, base):
 
 
 # =========================================
-# 32 - String → inteiro (com sinal)
+''' 32 - Escreva uma função em Python que resulta o número inteiro representado pela cadeia de
+caracteres fornecida. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex32_string_para_int(texto):
     sinal = 1
@@ -554,7 +613,8 @@ def ex32_string_para_int(texto):
 
 
 # =========================================
-# 33 - Inteiro → string
+'''33 - Escreva uma função em Python que resulta uma cadeia de caracteres que representa o
+número inteiro fornecido. Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex33_int_para_string(numero):
     if numero == 0:
@@ -575,7 +635,9 @@ def ex33_int_para_string(numero):
 
 
 # =========================================
-# 34 - String → real (com notação científica)
+'''34 - Escreva uma função em Python que resulta o número real representado pela cadeia de
+caracteres fornecida. A função deve lidar também com números em notação científica.
+Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex34_string_para_real(texto):
     i = 0
@@ -628,7 +690,9 @@ def ex34_string_para_real(texto):
 
 
 # =========================================
-# 35 - Real → string (notação científica simples)
+'''Escreva uma função em Python que resulta uma cadeia de caracteres que representa o
+número real fornecido. A função deve lidar também com números em notação científica.
+Faça um programa em Python para testar sua função.'''
 # =========================================
 def ex35_real_para_string(numero):
     if numero == 0:
