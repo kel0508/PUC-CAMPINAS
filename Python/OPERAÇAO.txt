@@ -1,0 +1,319 @@
+# APOSTILA COMPLETA – SISTEMAS DE NUMERAÇÃO, ADIÇÃO, SUBTRAÇÃO, MULTIPLICAÇÃO E DIVISÃO EM BASES 2 E 16
+
+Esta apostila foi escrita para iniciantes. O objetivo é explicar não apenas como fazer as contas, mas também por que elas funcionam.
+
+=====================================================================
+CAPÍTULO 1 – O QUE É UMA BASE NUMÉRICA?
+=====================================================================
+
+Uma base numérica define quantos símbolos diferentes podem ser utilizados para representar números.
+
+Base 10 (decimal):
+Símbolos: 0,1,2,3,4,5,6,7,8,9
+
+Base 2 (binário):
+Símbolos: 0 e 1
+
+Base 16 (hexadecimal):
+Símbolos: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+Tabela hexadecimal:
+A = 10
+B = 11
+C = 12
+D = 13
+E = 14
+F = 15
+
+=====================================================================
+CAPÍTULO 2 – VALOR POSICIONAL
+=====================================================================
+
+No sistema decimal:
+
+352 =
+3×10² + 5×10¹ + 2×10⁰
+= 300 + 50 + 2
+
+No sistema binário:
+
+1011₂ =
+1×2³ + 0×2² + 1×2¹ + 1×2⁰
+= 8 + 0 + 2 + 1
+= 11
+
+No sistema hexadecimal:
+
+2A₁₆ =
+2×16¹ + A×16⁰
+= 2×16 + 10
+= 42
+
+=====================================================================
+CAPÍTULO 3 – ADIÇÃO EM BINÁRIO
+=====================================================================
+
+Regras fundamentais:
+
+0 + 0 = 0
+0 + 1 = 1
+1 + 0 = 1
+1 + 1 = 10₂
+
+Por que 1+1=10₂?
+
+Porque:
+1 + 1 = 2
+
+E o número 2 em binário é:
+10₂
+
+Portanto escrevemos 0 e sobe 1.
+
+Também:
+1 + 1 + 1 = 11₂
+
+Porque:
+3 decimal = 11₂
+
+Passo a passo:
+1. Alinhe as vírgulas.
+2. Some da direita para a esquerda.
+3. Sempre que atingir 2, escreva o resto e transporte 1.
+
+Exemplo:
+11100,0010
+01101,1011
+-----------
+101001,1101
+
+=====================================================================
+CAPÍTULO 4 – ADIÇÃO EM HEXADECIMAL
+=====================================================================
+
+A lógica é igual à decimal.
+
+A diferença é que o limite agora é 16.
+
+Exemplo:
+
+F + 1
+
+F = 15
+
+15 + 1 = 16
+
+16 em hexadecimal = 10₁₆
+
+Logo:
+
+F + 1 = 10₁₆
+
+Escreve-se 0 e sobe 1.
+
+Exemplo:
+
+D + B
+
+D = 13
+B = 11
+
+13 + 11 = 24
+
+24 decimal = 18 hexadecimal
+
+Resultado:
+8 e sobe 1
+
+=====================================================================
+CAPÍTULO 5 – SUBTRAÇÃO EM BINÁRIO
+=====================================================================
+
+Regras:
+
+1 - 0 = 1
+1 - 1 = 0
+0 - 0 = 0
+
+Problema:
+0 - 1
+
+Não pode.
+
+Pegamos emprestado da próxima coluna.
+
+Exemplo:
+
+10₂ - 1₂
+
+10₂ vale 2 decimal.
+
+2 - 1 = 1
+
+Resultado:
+1
+
+Regra importante:
+
+Sempre que pegar emprestado em binário, recebe-se 10₂.
+
+=====================================================================
+CAPÍTULO 6 – SUBTRAÇÃO EM HEXADECIMAL
+=====================================================================
+
+Quando falta valor para subtrair, pegamos emprestado.
+
+Exemplo:
+
+3 - 4
+
+Não pode.
+
+Ao pegar emprestado:
+
+3 vira 13₁₆
+
+Atenção:
+13₁₆ não é treze decimal.
+
+13₁₆ =
+1×16 + 3
+= 19 decimal
+
+Agora:
+
+19 - 4 = 15
+
+15 hexadecimal = F
+
+Resultado:
+F
+
+=====================================================================
+CAPÍTULO 7 – NÚMEROS NEGATIVOS
+=====================================================================
+
+Sinais iguais:
+
+(+A)+(+B)
+Somar normalmente.
+
+(-A)+(-B)
+Somar normalmente e manter o sinal negativo.
+
+Sinais diferentes:
+
+(+A)+(-B)
+vira A-B
+
+(-A)+(+B)
+vira B-A
+
+O sinal final será do número com maior valor absoluto.
+
+=====================================================================
+CAPÍTULO 8 – MULTIPLICAÇÃO EM HEXADECIMAL
+=====================================================================
+
+Mesma técnica da multiplicação decimal.
+
+Diferença:
+todos os resultados devem ser escritos em hexadecimal.
+
+Exemplo:
+
+A × A
+
+A = 10
+
+10 × 10 = 100 decimal
+
+100 decimal = 64 hexadecimal
+
+Logo:
+
+A × A = 64₁₆
+
+Passos:
+1. Ignore temporariamente a vírgula.
+2. Faça a multiplicação.
+3. Recoloque a vírgula no final.
+
+=====================================================================
+CAPÍTULO 9 – CASAS DECIMAIS NA MULTIPLICAÇÃO
+=====================================================================
+
+Exemplo:
+
+FA,CA × F,0CA
+
+Primeiro número:
+2 casas decimais
+
+Segundo número:
+3 casas decimais
+
+Total:
+2 + 3 = 5
+
+O resultado deverá possuir 5 casas decimais.
+
+=====================================================================
+CAPÍTULO 10 – COMPARAÇÃO DE NÚMEROS HEXADECIMAIS
+=====================================================================
+
+Método 1:
+Compare a quantidade de dígitos.
+
+Mais dígitos = maior número.
+
+Método 2:
+Se tiverem mesma quantidade de dígitos,
+compare da esquerda para a direita.
+
+O primeiro dígito diferente define o maior número.
+
+=====================================================================
+CAPÍTULO 11 – DIVISÃO EM HEXADECIMAL
+=====================================================================
+
+Passo 1:
+Iguale as casas decimais.
+
+Passo 2:
+Ignore temporariamente a vírgula.
+
+Passo 3:
+Faça a divisão longa.
+
+Passo 4:
+Todos os produtos e subtrações devem ser feitos em hexadecimal.
+
+=====================================================================
+CAPÍTULO 12 – DICAS IMPORTANTES
+=====================================================================
+
+Memorize:
+
+Binário:
+1+1 = 10₂
+1+1+1 = 11₂
+
+Hexadecimal:
+A=10
+B=11
+C=12
+D=13
+E=14
+F=15
+
+Regra universal do empréstimo:
+
+Base 2  -> recebe 10₂
+Base 8  -> recebe 10₈
+Base 10 -> recebe 10₁₀
+Base 16 -> recebe 10₁₆
+
+Sempre que você pega emprestado, recebe exatamente o valor da base.
+
+Essa é a ideia fundamental por trás de todas as operações em qualquer sistema de numeração.
