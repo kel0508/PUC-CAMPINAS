@@ -66,3 +66,50 @@ int main(){
     
     return 0;
 }
+
+int main(){
+    int idade;
+    
+    printf("Digite sua idade:");
+    scanf("%d", &idade);
+    
+    if(idade <= 19){
+        printf("Jovem!");
+    }
+    else if (idade < 60){ //se ele chegar nessa linha, ele ja é maior que 19, então precisa validar de novo
+        printf("Adulto!");
+    }
+    else{
+        printf("Idoso!");
+    }
+    return 0;
+}
+
+int main(){
+    // equilátero: 3 lados iguais
+    // isoceles: 2 lados iguais
+    // escaleno: todos os lados diferentes
+    int n1, n2, n3;
+    
+    printf("Digite o 1° num:");
+    scanf("%d", &n1);
+    
+    menor = n1;
+    
+    printf("Digite o 2° num:");
+    scanf("%d", &n2);
+    
+    printf("Digite o 3° num:");
+    scanf("%d", &n3);
+
+    if(n1 == n2 && n2 == n3){
+        printf("equilátero!");
+    }
+    else if(n1 == n2 || n2 == n3 || n1 == n3){
+        printf("isoceles!");
+    }
+    else{
+        printf("escaleno!");
+    }
+    return 0;
+}
